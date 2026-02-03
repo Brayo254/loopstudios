@@ -4,45 +4,149 @@
   --color-black: hsl(0, 0%, 0%);
   --color-grey200: hsl(0, 0%, 85%);
 }
+
 body {
-  font-family: var(--font-alata),sans-serif;
+  font-family: var(--font-alata), sans-serif;
 }
- h1,h2,h3,h4,h5,h6{
-   font-family: var(--font-josefinSans),sans-serif;
- }
 
- .linkHover{
-     position: relative;
-     display: inline-block;
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-josefinSans), sans-serif;
+}
 
- .linkHover::after{
-     position: absolute;
-     content: "";
-     left: 0;
-     bottom: -4px;
-     width: 0;
-     height: 2px;
-     background-color: white;
-     transition: width 0.3s ease;
- }
- .linkHover:hover::after{
-     width: 100%;
- }
+.linkHover {
+  position: relative;
+  display: inline-block;
+}
+
+.linkHover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+.linkHover:hover::after {
+  width: 100%;
+}
 .hero-section {
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    /* Default (mobile) background */
-    background-image: url("/mobile/image-hero.jpg");
+  /* Default (mobile) background */
+  background-image: url("/mobile/image-hero.jpg");
 }
-
 
 @media (min-width: 768px) {
-    .hero-section {
-        background-image: url("/desktop/image-hero.jpg");
-    }
+  .hero-section {
+    background-image: url("/mobile/image-hero.jpg");
+  }
+
+  .item1 {
+    background-image: url("/mobile/image-curiosity.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item2 {
+    background-image: url("/mobile/image-deep-earth.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item3 {
+    background-image: url("/mobile/image-fisheye.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item4 {
+    background-image: url("/mobile/image-from-above.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item5 {
+    background-image: url("/mobile/image-grid.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item6 {
+    background-image: url("/mobile/image-night-arcade.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item7 {
+    background-image: url("/mobile/image-pocket-borealis.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .item8 {
+    background-image: url("/mobile/image-soccer-team.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.item1 {
+  background-image: url("/desktop/image-curiosity.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item2 {
+  background-image: url("/desktop/image-deep-earth.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item3 {
+  background-image: url("/desktop/image-fisheye.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item4 {
+  background-image: url("/desktop/image-from-above.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item5 {
+  background-image: url("/desktop/image-grid.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item6 {
+  background-image: url("/desktop/image-night-arcade.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item7 {
+  background-image: url("/desktop/image-pocket-borealis.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item8 {
+  background-image: url("/desktop/image-soccer-team.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
