@@ -33,7 +33,7 @@ const Footer = () => {
               Support
             </Link>
             <Link className="md:mr-2.5 md:text-xl" href="#">
-              Contact
+             About
             </Link>
           </div>
         </div>

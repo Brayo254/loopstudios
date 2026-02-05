@@ -20,7 +20,7 @@ function Nav() {
         </div>
         <div className="flex items-center">
           <Link className="mr-4 text-grey200 linkHover" href="#">
-            Contact
+            About
           </Link>
           <Link className="mr-4 text-grey200 linkHover" href="#">
             Events
