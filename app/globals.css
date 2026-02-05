@@ -42,111 +42,13 @@ h6 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("/mobile/image-hero.jpg");
 
   /* Default (mobile) background */
-  background-image: url("/mobile/image-hero.jpg");
 }
 
 @media (min-width: 768px) {
   .hero-section {
-    background-image: url("/mobile/image-hero.jpg");
+    background-image: url("/desktop/image-hero.jpg");
   }
-
-  .item1 {
-    background-image: url("/mobile/image-curiosity.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item2 {
-    background-image: url("/mobile/image-deep-earth.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item3 {
-    background-image: url("/mobile/image-fisheye.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item4 {
-    background-image: url("/mobile/image-from-above.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item5 {
-    background-image: url("/mobile/image-grid.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item6 {
-    background-image: url("/mobile/image-night-arcade.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item7 {
-    background-image: url("/mobile/image-pocket-borealis.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .item8 {
-    background-image: url("/mobile/image-soccer-team.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
-.item1 {
-  background-image: url("/desktop/image-curiosity.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item2 {
-  background-image: url("/desktop/image-deep-earth.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item3 {
-  background-image: url("/desktop/image-fisheye.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item4 {
-  background-image: url("/desktop/image-from-above.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item5 {
-  background-image: url("/desktop/image-grid.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item6 {
-  background-image: url("/desktop/image-night-arcade.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item7 {
-  background-image: url("/desktop/image-pocket-borealis.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.item8 {
-  background-image: url("/desktop/image-soccer-team.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

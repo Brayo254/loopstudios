@@ -2,12 +2,13 @@ import React from "react";
 import Button from "./Button";
 import { contentData } from "../data";
 import Image from "next/image";
+import CreationCard from "./CreationCard";
 
 const Creations = () => {
   return (
     <>
-      <section className="">
-        <div className="md:w-full md:h-25 md:flex md:flex-row md:justify-between md:items-center md:p-8 bg-amber-700">
+      <section className="px-6 py-6 md:px-20 md:py-20">
+        <div className="md:w-full md:h-25 md:flex md:flex-row md:justify-between md:items-center md:p-8">
           <div>
             <h2 className="text-4xl">OUR CREATIONS</h2>
           </div>
@@ -16,16 +17,9 @@ const Creations = () => {
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-4 md:p-10 md:gap-2">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-8">
           {contentData.map((item) => (
-            <div key={item.id} className="md:item1">
-              <div className="md:flex md:justify-center md:items-center md:gap-x-3">
-                <Image src={item.image} width={150} height={300} alt="image" />
-              </div>
-              <div className="md:flex md:justify-center md:items-center">
-                <p>{item.title}</p>
-              </div>
-            </div>
+            <CreationCard item={item} key={item.id} />
           ))}
         </div>
       </section>

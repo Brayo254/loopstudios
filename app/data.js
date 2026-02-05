@@ -10,44 +10,52 @@
 export const contentData = [
   {
     id: 1,
-    image: "/desktop/image-curiosity.jpg",
+    imageDesktop: "/desktop/image-curiosity.jpg",
+    imageMobile: "/mobile/image-curiosity.jpg",
     title: "The curiosity",
   },
   {
     id: 2,
-    image: "/desktop/image-deep-earth.jpg",
+    imageDesktop: "/desktop/image-deep-earth.jpg",
+    imageMobile: "/mobile/image-deep-earth.jpg",
     title: "Deep Earth",
   },
   {
     id: 3,
-    image: "/desktop/image-fisheye.jpg",
+    imageDesktop: "/desktop/image-fisheye.jpg",
+    imageMobile: "/mobile/image-fisheye.jpg",
     title: "Fish Eye",
   },
   {
     id: 4,
-    image: "/desktop/image-from-above.jpg",
+    imageDesktop: "/desktop/image-from-above.jpg",
+    imageMobile: "/mobile/image-from-above.jpg",
     title: "From Above",
   },
   {
     id: 5,
-    image: "/desktop/image-grid.jpg",
+    imageDesktop: "/desktop/image-grid.jpg",
+    imageMobile: "/mobile/image-grid.jpg",
     title: "The Grid",
   },
   {
     id: 6,
-    image: "/desktop/image-night-arcade.jpg",
+    imageDesktop: "/desktop/image-night-arcade.jpg",
+    imageMobile: "/mobile/image-night-arcade.jpg",
     title: "Night Arcade",
   },
 
   {
     id: 7,
-    image: "/desktop/image-pocket-borealis.jpg",
+    imageDesktop: "/desktop/image-pocket-borealis.jpg",
+    imageMobile: "/mobile/image-pocket-borealis.jpg",
     title: "Pocket Borealis",
   },
 
   {
     id: 8,
-    image: "/desktop/image-soccer-team.jpg",
+    imageDesktop: "/desktop/image-soccer-team.jpg",
+    imageMobile: "/mobile/image-soccer-team.jpg",
     title: "Soccer Team",
   },
 ];
