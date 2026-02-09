@@ -39,7 +39,7 @@ function Nav() {
         <div className="mb-4">
           <Image src="/logo.svg" alt="logo" width={200} height={100} />
         </div>
-        {open ? <FaBars /> : <FaTimes />}
+        {isOpen ? <FaTimes /> : <FaBars />}
       </div>
 
       <AnimatePresence>
