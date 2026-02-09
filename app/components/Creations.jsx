@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "./Button";
 import { contentData } from "../data";
-import Image from "next/image";
 import CreationCard from "./CreationCard";
 
 const Creations = () => {

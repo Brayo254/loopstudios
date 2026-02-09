@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { motion, AnimatePresence } from "motion/react";
 
 function Nav() {
-  const [toggle, setToggle] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const handleToggle = (prev) => {
-    setToggle((prev) => !prev);
+  const handleToggle = () => {
     setIsOpen((prev) => !prev);
   };
   return (
@@ -40,28 +39,37 @@ function Nav() {
         <div className="mb-4">
           <Image src="/logo.svg" alt="logo" width={200} height={100} />
         </div>
-        {toggle ? <FaTimes /> : <FaBars />}
+        {open ? <FaBars /> : <FaTimes />}
       </div>
 
-      {/*mobile nav*/}
-      {isOpen && (
-        <nav className="md:hidden absolute w-full bg-black h-65 flex flex-col items-center p-5">
-          <div className="flex flex-col pr-3 text-2xl mt-1 items-center">
-            <Link className="mr-4 text-white linkHover" href="#">
-              Contact
-            </Link>
-            <Link className="mr-4 text-white linkHover" href="#">
-              Events
-            </Link>
-            <Link className="mr-4 text-white linkHover" href="#">
-              Careers
-            </Link>
-            <Link className="mr-4 text-white linkHover" href="#">
-              Support
-            </Link>
-          </div>
-        </nav>
-      )}
+      <AnimatePresence>
+        {/*mobile nav*/}
+        {isOpen && (
+          <motion.nav
+            className="md:hidden absolute w-full bg-black h-65 flex flex-col items-center p-5"
+            key="mobile-nav"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", stiffness: 100 }}
+          >
+            <div className="flex flex-col pr-3 text-2xl mt-1 items-center">
+              <Link className="mr-4 text-white linkHover" href="#">
+                Contact
+              </Link>
+              <Link className="mr-4 text-white linkHover" href="#">
+                Events
+              </Link>
+              <Link className="mr-4 text-white linkHover" href="#">
+                Careers
+              </Link>
+              <Link className="mr-4 text-white linkHover" href="#">
+                Support
+              </Link>
+            </div>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </>
   );
 }
