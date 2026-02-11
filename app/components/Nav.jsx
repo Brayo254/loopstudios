@@ -18,17 +18,8 @@ function Nav() {
           <Image src="/logo.svg" alt="logo" width={100} height={100} />
         </div>
         <div className="flex items-center">
-          <Link className="mr-4 text-grey200 linkHover" href="#">
-            About
-          </Link>
-          <Link className="mr-4 text-grey200 linkHover" href="#">
-            Events
-          </Link>
-          <Link className="mr-4 text-grey200 linkHover" href="#">
-            Careers
-          </Link>
-          <Link className="mr-4 text-grey200 linkHover" href="#">
-            Support
+          <Link className="mr-4 text-grey200 linkHover" href="/contact">
+            Contact Us
           </Link>
         </div>
       </nav>
@@ -54,17 +45,8 @@ function Nav() {
             transition={{ type: "spring", stiffness: 100 }}
           >
             <div className="flex flex-col pr-3 text-2xl mt-1 items-center">
-              <Link className="mr-4 text-white linkHover" href="#">
+              <Link className="mr-4 text-white linkHover" href="/contact">
                 Contact
-              </Link>
-              <Link className="mr-4 text-white linkHover" href="#">
-                Events
-              </Link>
-              <Link className="mr-4 text-white linkHover" href="#">
-                Careers
-              </Link>
-              <Link className="mr-4 text-white linkHover" href="#">
-                Support
               </Link>
             </div>
           </motion.nav>

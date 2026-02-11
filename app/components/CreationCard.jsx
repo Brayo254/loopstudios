@@ -32,9 +32,9 @@ const CreationCard = ({ item }) => {
         whileHover={{ color: "#ffffff" }}
         transition={{ duration: 0.2 }}
       >
-        <h3 className="absolute bottom-6 left-6 text-white font-bold text-2xl md:text-3xl">
+        <p className="absolute bottom-6 left-6 text-white font-bold text-2xl md:text-3xl">
           {item.title}
-        </h3>
+        </p>
       </motion.h3>
     </motion.div>
   );
